@@ -1,18 +1,10 @@
 import React from "react";
-import Header from "../../components/header";
+import Layout from "../../components/layout";
 import "../styles/global.css";
 
 const AboutPage = () => {
   return (
-    <div>
-      {/* Reusable Header */}
-      <Header />
-
-      {/* Page Title */}
-      <section className="page-title">
-        <h2>About Me</h2>
-      </section>
-
+    <Layout title="About Me">
       {/* About Content */}
       <section className="page-content">
         <p>
@@ -26,14 +18,7 @@ const AboutPage = () => {
           page!
         </p>
       </section>
-
-      {/* Footer Section */}
-      <footer className="footer">
-        <p>
-          &copy; {new Date().getFullYear()} My Portfolio. All Rights Reserved.
-        </p>
-      </footer>
-    </div>
+    </Layout>
   );
 };
 

@@ -1,25 +1,15 @@
 import React from "react";
-import Header from "../../components/header";
+import Layout from "../../components/layout";
 import "../styles/global.css";
 
 const HomePage = () => {
   return (
-    <div>
-      {/* Header Section */}
-      <Header />
-
+    <Layout>
       {/* Image Section */}
       <section className="home-image">
         <img src="https://picsum.photos/1200/600" alt="Random Placeholder" />
       </section>
-
-      {/* Footer Section */}
-      <footer className="footer">
-        <p>
-          &copy; {new Date().getFullYear()} My Portfolio. All Rights Reserved.
-        </p>
-      </footer>
-    </div>
+    </Layout>
   );
 };
 
