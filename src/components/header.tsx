@@ -1,13 +1,21 @@
 import React from "react";
-import NavBar from "./navbar";
-import "../styles/global.css";
+import Navbar from "./navbar";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
-    <header className="site-header">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Explore my work and learn more about me.</p>
-      <NavBar />
+    <header className="bg-gray-800 text-white p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Logo or Home Link */}
+        <div className="text-lg font-bold">
+          <a href="/" className="text-white">
+            {/* Logo Placeholder */}
+            {/* Example: <img src="/path-to-logo.png" alt="Logo" className="w-10 h-10"/> */}
+            My Portfolio
+          </a>
+        </div>
+        {/* Navigation Bar */}
+        <Navbar />
+      </div>
     </header>
   );
 };
