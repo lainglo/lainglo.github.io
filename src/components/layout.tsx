@@ -11,14 +11,18 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, title, subtitle }) => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <section className="page-title">
-        {title && <h2>{title}</h2>}
-        {subtitle && <p>{subtitle}</p>}
-      </section>
+      <div className="flex-grow page-content">
+        <section className="page-title">
+          {title && <h2>{title}</h2>}
+          {subtitle && <p>{subtitle}</p>}
+        </section>
 
-      <main className="page-content">{children}</main>
+        <main className="page-content">{children}</main>
+      </div>
+
+      {/* Sticky Footer */}
       <Footer />
     </div>
   );
