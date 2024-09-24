@@ -1,5 +1,6 @@
 import React from "react";
 import PortfolioItem from "./portfolioItem";
+import "../styles/global.css";
 
 interface PortfolioGridProps {
   items: {

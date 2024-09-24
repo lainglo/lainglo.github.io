@@ -1,6 +1,6 @@
 import React from "react";
-import PortfolioGrid from "../../components/portfolioGrid";
-import Layout from "../../components/layout";
+import PortfolioGrid from "../components/portfolioGrid";
+import Layout from "../components/layout";
 import "../styles/global.css";
 
 const Blog = () => {
