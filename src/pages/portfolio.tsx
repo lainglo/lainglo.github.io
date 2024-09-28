@@ -7,27 +7,39 @@ const PortfolioPage = () => {
   // Define the portfolio items as an array of objects
   const portfolioItems = [
     {
-      title: "Project 1",
+      title: "Digital Health",
       description: "A brief description of Project 1.",
-      link: "/project-1",
+      link: "/portfolio/project-dh",
       imageSrc: "https://picsum.photos/300/200",
     },
     {
-      title: "Project 2",
+      title: "Earth Observation",
       description: "A brief description of Project 2.",
-      link: "/project-2",
+      link: "/project-eo",
       imageSrc: "https://picsum.photos/300/200",
     },
     {
-      title: "Project 3",
+      title: "Big Data Science",
       description: "A brief description of Project 3.",
-      link: "/project-3",
+      link: "/project-bds",
       imageSrc: "https://picsum.photos/300/200",
     },
     {
-      title: "Project 4",
+      title: "Cross Platform Development",
       description: "A brief description of Project 4.",
-      link: "/project-4",
+      link: "/project-cpd",
+      imageSrc: "https://picsum.photos/300/200",
+    },
+    {
+      title: "Natural Language Processing",
+      description: "A brief description of Project 4.",
+      link: "/project-nlp",
+      imageSrc: "https://picsum.photos/300/200",
+    },
+    {
+      title: "Epidemiology",
+      description: "A brief description of Project 4.",
+      link: "/project-epi",
       imageSrc: "https://picsum.photos/300/200",
     },
   ];

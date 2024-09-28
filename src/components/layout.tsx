@@ -14,10 +14,12 @@ const Layout: React.FC<LayoutProps> = ({ children, title, subtitle }) => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex-grow page-content">
-        <section className="page-title">
-          {title && <h2>{title}</h2>}
-          {subtitle && <p>{subtitle}</p>}
-        </section>
+        {title && (
+          <section className="page-title">
+            <h2>{title}</h2>
+            {subtitle && <p>{subtitle}</p>}
+          </section>
+        )}
 
         <main className="page-content">{children}</main>
       </div>
